@@ -1,0 +1,138 @@
+.app {
+  text-align: center;
+}
+
+.appHeader {
+  overflow: hidden;
+  min-height: 300px;
+  min-width: 300px;
+  max-height: 75vh;
+  max-width: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: black;
+  cursor: pointer;
+}
+
+.appHeader:hover .image {
+  transform: scale(1.2);
+}
+
+.appHeader .text {
+  font-size: 18px;
+  background-image: linear-gradient(transparent 18px, #000 0);
+  background-size: 0;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+}
+
+.appHeader:hover .text {
+  background-size: 100%;
+  font-size: 18px;
+}
+
+.appHeader:hover .startingPrice {
+  color: #3554d1;
+  transition: 0.2s linear;
+}
+
+.imageContainer {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn {
+  top: 20px;
+  left: 250px;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px;
+  height: 34px;
+  width: 34px;
+}
+
+.btn:hover {
+  background-color: blue;
+  transition: 0.2s linear;
+}
+
+.imageBtn {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+}
+
+.information {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Jost", sans-serif;
+}
+
+.name {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.city {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #697488;
+}
+
+.grade {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.quality {
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.assessment {
+  font-size: 13px;
+  background-color: #3554d1;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 6px 8px 6px;
+  font-weight: 600;
+}
+
+.startingPrice {
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.quantityReviews {
+  display: flex;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #697488;
+}
+
+.price {
+  color: #3554d1;
+}
